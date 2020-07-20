@@ -1,0 +1,108 @@
+/* Custom Stylesheet */
+/**
+ * Use this file to override Materialize files so you can update
+ * the core Materialize files in the future
+ *
+ * Made By MaterializeCSS.com
+ */
+
+ :root {
+   /* COLORS */
+   --cc-cyan: #00AEEF;
+   --cc-cyan-hover: #11BEEF;
+   --cc-green: #8dc640;
+   --cc-green-hover: #9ec690;
+   --cc-gray: #ecf0f1;
+   --cc-gray-hover: #e0e0e0;
+   --cc-navy: #34495e;
+   --cc-navy-hover: #5b88b6;
+   --cc-orange: #F7941D;
+   --cc-orange-hover: #F37021;
+   --cc-white: #FFFFFF;
+
+   /* POSITIONING */
+   --offset-content-navbar: 60px;
+   --hero-video-height: 800px;
+   --hero-image-height: calc(var(--hero-video-height) * .6);
+   --offset-content-hero-video: calc(var(--hero-video-height) * .4);
+   --offset-content-hero-image: calc(var(--hero-image-height) * .4);
+ }
+
+
+.carousel .carousel-item {
+  height: 300px;
+  width: 308px;
+}
+
+#index-banner > div.parallax > img {
+  opacity: 0.6 !important;
+}
+
+body > div:nth-child(4) > div.parallax > img {
+  opacity: 0.6 !important;
+}
+
+
+ #codeLogo {
+   width: 30px;
+   height: 30px;
+ }
+
+
+nav ul a,
+nav .brand-logo {
+  color: #444;
+}
+
+p {
+  line-height: 2rem;
+}
+
+.sidenav-trigger {
+  color: #26a69a;
+}
+
+.parallax-container {
+  min-height: 380px;
+  line-height: 0;
+  height: auto;
+  color: rgba(255,255,255,.9);
+}
+  .parallax-container .section {
+    width: 100%;
+  }
+
+@media only screen and (max-width : 992px) {
+  .parallax-container .section {
+    position: absolute;
+    top: 40%;
+  }
+  #index-banner .section {
+    top: 10%;
+  }
+}
+
+@media only screen and (max-width : 600px) {
+  #index-banner .section {
+    top: 0;
+  }
+}
+
+.icon-block {
+  padding: 0 15px;
+}
+.icon-block .material-icons {
+  font-size: inherit;
+}
+
+footer.page-footer {
+  margin: 0;
+}
+
+.page-footer {
+  background-color: var(--cc-cyan) !important;
+}
+
+i.right {
+  margin-left: 5px;
+}
