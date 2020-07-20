@@ -18,3 +18,7 @@ $(".dropdown-trigger").dropdown();
 $(document).ready(function(){
   $('.carousel').carousel();
 });
+
+//
+$('.fixed-action-btn').openFAB();
+$('.fixed-action-btn').closeFAB();
